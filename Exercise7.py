@@ -18,8 +18,11 @@ def decode_message(message: str, password: int) -> str:
     decoded_message = ""
     
     for char in message:
-        # TODO: Can't "reverse engineer" the mod, might give wrong results
-        decoded_message += chr(ord(char) - password);
+        try:
+            # TODO: Can't "reverse engineer" the mod, might give incorrect results
+            decoded_message += chr(ord(char) - password);
+        except Exception:
+            return "Error decoding message."
     
     return decoded_message
 
