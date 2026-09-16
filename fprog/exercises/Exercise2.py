@@ -7,7 +7,6 @@ number = input("Enter a number: ")
 if not number.isdigit():
     raise ValueError("Invalid number.")
 
-
 number = int(number)
     
 # Check if it's odd
