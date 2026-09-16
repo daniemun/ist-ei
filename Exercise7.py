@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 # Get alphabet (printable chars) length from last printable char - first printable char
 alphabet_length = ord('~') - ord(' ')

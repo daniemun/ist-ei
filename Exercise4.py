@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 # Get input from user
 n_many = input("Enter the bigger number (n_many): ")
