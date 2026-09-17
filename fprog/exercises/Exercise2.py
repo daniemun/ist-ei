@@ -8,7 +8,7 @@ if not number.isdigit():
     raise ValueError("Invalid number.")
 
 number = int(number)
-    
+
 # Check if it's odd
 if number % 2 != 0:
     print("Estranho")

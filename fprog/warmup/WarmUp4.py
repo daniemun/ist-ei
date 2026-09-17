@@ -7,7 +7,7 @@ while True:
         break
     except ValueError:
         print("Invalid number!")
-        
+
 if numberA > numberB:
     print("A wins!")
 elif numberB > numberA:

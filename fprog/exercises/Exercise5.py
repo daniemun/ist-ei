@@ -6,7 +6,7 @@ n_many = input("Enter the bigger number (n_many): ")
 # Validate n_many
 if not n_many.isdigit():
     raise ValueError("Invalid number.")
-    
+
 n_many = int(n_many)
 
 result = 0
@@ -15,6 +15,6 @@ result = 0
 for i in range(n_many):
     if i % 2 != 0:
         result += i
-        
+
 # Output sum
 print(f"Result: {result}")
