@@ -4,7 +4,7 @@ import sys
 
 sys.set_int_max_str_digits(0x7FFFFFFF)
 
-def factorial(x):
+def factorial(x:int) -> int:
     f = 1
 
     for i in range(1, x + 1):

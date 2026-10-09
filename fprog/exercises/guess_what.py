@@ -22,25 +22,29 @@ def main():
     
     while not adivinhou and num_tentativas > 0:
         try:
-            user_guess = int(input(f"{num_tentativas} tentativas: "))
+            user_guess = int(input(f"{num_tentativas} tentativas restantes: "))
         except ValueError:
             continue
             
-        if user_guess < secret_number:
+        num_tentativas -= 1
+            
+        if user_guess == secret_number:
+            adivinhou = True
+            continue
+            
+        if num_tentativas == 0:
+            continue
+        
+        elif user_guess < secret_number:
             print("Maior!")
-            num_tentativas -= 1
             
         elif user_guess > secret_number:
             print("Menor!")
-            num_tentativas -= 1
-            
-        else:
-            adivinhou = True
         
     if adivinhou:
         print("Ganhaste, parabéns!")
     else:
-        print("Dedica-te à pesca.")
+        print(f"Dedica-te à pesca. O número secreto era {secret_number}.")
     
 if __name__ == "__main__":
     main()
